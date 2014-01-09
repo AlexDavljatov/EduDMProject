@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="40.398" errors="0" skipped="0" tests="136" name="org.apache.pdfbox.TestAll">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_17\jre\bin"/>
+    <property name="java.vm.version" value="23.7-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Alex\Desktop\Diploma\Project\TextMining"/>
+    <property name="java.runtime.version" value="1.7.0_17-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_17\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Alex\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files\maven\apache-maven-3.1.0\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\maven\apache-maven-3.1.0\bin;C:\Program Files\Java\jdk1.7.0_17\\bin;C:\Users\Alex\Desktop\JS7\JBoss\jboss-as-7.1.1.Final\jboss-as-7.1.1.Final\bin;C:\Users\Alex\Desktop\JS7\Tomcat\apache-tomcat-7.0.37-windows-x64\apache-tomcat-7.0.37\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files\forge\forge-distribution-1.3.3.Final\bin;C:\Program Files\ant\\bin;D:\Program Files\Flex\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\VisualSVN Server\bin;C:\grails\grails-2.3.4\bin;C:\hadoop\hadoop\hadoop\bin;C:\groovy\groovy-2.2.1\bin;C:\RailsInstaller3\Git\cmd;C:\RailsInstaller3\Ruby2.0.0\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby1.9.3\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Alex"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="Alex"/>
+    <property name="java.class.path" value="C:\Program Files\maven\apache-maven-3.1.0\boot\plexus-classworlds-2.4.2.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_17\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_17"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_17\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_17\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_17\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\maven\apache-maven-3.1.0"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.039" classname="org.apache.pdfbox.util.TestDateUtil" name="testExtract"/>
+  <testcase time="0.156" classname="org.apache.pdfbox.util.TestDateUtil" name="testToString"/>
+  <testcase time="0.036" classname="org.apache.pdfbox.util.TestDateUtil" name="testParseTZ"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.util.TestDateUtil" name="testFormatTZoffset"/>
+  <testcase time="0.176" classname="org.apache.pdfbox.util.TestDateUtil" name="testDateConverter"/>
+  <testcase time="0.004" classname="org.apache.pdfbox.util.TestDateUtil" name="testDateConversion"/>
+  <testcase time="0" classname="org.apache.pdfbox.util.TestMatrix" name="testConstructionAndCopy"/>
+  <testcase time="0" classname="org.apache.pdfbox.util.TestMatrix" name="testMultiplication"/>
+  <testcase time="0.672" classname="org.apache.pdfbox.filter.TestFilters" name="testFilters"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.TestFDF" name="testFDFPDFWithLotsOfFields"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.TestFDF" name="testFDFFreedomExpressions"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.TestFDF" name="testFDFfdeb"/>
+  <testcase time="0.009" classname="org.apache.pdfbox.pdmodel.interactive.form.TestFields" name="testFlags"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testStaticMembers"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSString" name="testSetForceHexLiteralForm"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSString" name="testCreateFromHexString"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testGetString"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSString" name="testGetHex"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testAppend"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testReset"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSString" name="testGetBytes"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testWritePDF"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSString" name="testUnicode"/>
+  <testcase time="0.004" classname="org.apache.pdfbox.cos.TestCOSString" name="testAccept"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testEquals"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testHashCode"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testGetFilterManager"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testGetCOSObject"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSString" name="testIsSetNeedToBeUpdate"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSString" name="testIsSetDirect"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testFloatValue"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testDoubleValue"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testLongValue"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testWritePDF"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testAccept"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testEquals"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testHashCode"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testIntValue"/>
+  <testcase time="0.003" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testGet"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testGetFilterManager"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testGetCOSObject"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testIsSetNeedToBeUpdate"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSInteger" name="testIsSetDirect"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testFloatValue"/>
+  <testcase time="0.002" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testDoubleValue"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testLongValue"/>
+  <testcase time="0.003" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testWritePDF"/>
+  <testcase time="0.003" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testAccept"/>
+  <testcase time="0.004" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testEquals"/>
+  <testcase time="0.002" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testHashCode"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testIntValue"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testGet"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testGetFilterManager"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testGetCOSObject"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testIsSetNeedToBeUpdate"/>
+  <testcase time="0" classname="org.apache.pdfbox.cos.TestCOSFloat" name="testIsSetDirect"/>
+  <testcase time="0.058" classname="org.apache.pdfbox.pdmodel.TestPDDocument" name="testSaveLoadStream"/>
+  <testcase time="0.012" classname="org.apache.pdfbox.pdmodel.TestPDDocument" name="testSaveLoadFile"/>
+  <testcase time="0.069" classname="org.apache.pdfbox.pdmodel.TestPDDocument" name="testSaveLoadNonSeqStream"/>
+  <testcase time="0.01" classname="org.apache.pdfbox.pdmodel.TestPDDocument" name="testSaveLoadNonSeqFile"/>
+  <testcase time="0.443" classname="org.apache.pdfbox.pdmodel.TestPDDocumentCatalog" name="testPageLabels"/>
+  <testcase time="0.028" classname="org.apache.pdfbox.pdmodel.TestPDDocumentCatalog" name="testLabelsOnMalformedPdf"/>
+  <testcase time="0.036" classname="org.apache.pdfbox.pdmodel.TestPDDocumentCatalog" name="testGetNumberOfPages"/>
+  <testcase time="0.039" classname="org.apache.pdfbox.pdmodel.TestPDDocumentCatalog" name="testPageMap"/>
+  <testcase time="0.011" classname="org.apache.pdfbox.pdmodel.TestPDDocumentInformation" name="testMetadataExtraction"/>
+  <testcase time="0.48" classname="org.apache.pdfbox.pdmodel.graphics.optionalcontent.TestOptionalContentGroups" name="testOCGGeneration"/>
+  <testcase time="0.002" classname="org.apache.pdfbox.pdmodel.graphics.optionalcontent.TestOptionalContentGroups" name="testOCGConsumption"/>
+  <testcase time="0.219" classname="org.apache.pdfbox.util.TestLayerUtility" name="testLayerImport"/>
+  <testcase time="0.002" classname="org.apache.pdfbox.TestTextToPdf" name="testCreateEmptyPdf"/>
+  <testcase time="0.083" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testAdd"/>
+  <testcase time="0.012" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testCos"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testCeiling"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testAbs"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testCvi"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testFloor"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testAnd"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testCvr"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testAtan"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testDiv"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testExp"/>
+  <testcase time="0.009" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testIDiv"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testLn"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testLog"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testMod"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testMul"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testNeg"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testRound"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testSin"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testSqrt"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testSub"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testTruncate"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testBitshift"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testEq"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testGe"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testGt"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testLe"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testLt"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testNe"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testNot"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testOr"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testXor"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testIf"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testIfElse"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testCopy"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testDup"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testExch"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testIndex"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testPop"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestOperators" name="testRoll"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestParser" name="testParseFloat"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestParser" name="testParserBasics"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestParser" name="testJira804"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.function.type4.TestParser" name="testNested"/>
+  <testcase time="0.002" classname="org.apache.pdfbox.pdmodel.common.function.TestPDFunctionType4" name="testFunctionSimple"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.function.TestPDFunctionType4" name="testFunctionArgumentOrder"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.TestIOUtils" name="testPopulateBuffer"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.TestRandomAccessBuffer" name="testSimpleReadWrite"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.TestRandomAccessBuffer" name="testSimpleArrayReadWrite"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.TestRandomAccessBuffer" name="testArrayReadWrite"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.TestRandomAccessBuffer" name="testOverwrite"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.TestRandomAccessBuffer" name="testPDFBOX1490"/>
+  <testcase time="37.668" classname="org.apache.pdfbox.util.TestImageIOUtils" name="testRenderImage"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.ccitt.TestPackedBitArray" name="testPackedBitArray"/>
+  <testcase time="0.004" classname="org.apache.pdfbox.io.ccitt.TestCCITTFaxG31DDecodeInputStream" name="testDecoderNaked"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.ccitt.TestCCITTFaxG31DDecodeInputStream" name="testDecoderWithEOL"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.ccitt.TestCCITTFaxG31DDecodeInputStream" name="testDecoderAlignedWithRTC"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.ccitt.TestCCITTFaxG31DDecodeInputStream" name="testDecoderInitialEOL"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.ccitt.TestCCITTFaxG31DDecodeInputStream" name="testDecoderRowsRestriction"/>
+  <testcase time="0" classname="org.apache.pdfbox.io.ccitt.TestCCITTFaxG31DDecodeInputStream" name="testDecoderWhiteLines"/>
+  <testcase time="0.068" classname="org.apache.pdfbox.TestExtractText" name="testEmbeddedPDFs"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.edit.TestPDPageContentStream" name="testSetCmykColors"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.TestPDNameTreeNode" name="testUpperLimit"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.TestPDNameTreeNode" name="testLowerLimit"/>
+  <testcase time="0.001" classname="org.apache.pdfbox.pdmodel.common.TestPDNumberTreeNode" name="testUpperLimit"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.TestPDNumberTreeNode" name="testLowerLimit"/>
+  <testcase time="0" classname="org.apache.pdfbox.pdmodel.common.TestPDNumberTreeNode" name="testGetValue"/>
+</testsuite>

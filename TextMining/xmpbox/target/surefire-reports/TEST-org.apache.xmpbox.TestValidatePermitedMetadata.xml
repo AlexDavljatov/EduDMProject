@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="1.07" errors="0" skipped="0" tests="167" name="org.apache.xmpbox.TestValidatePermitedMetadata">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_17\jre\bin"/>
+    <property name="java.vm.version" value="23.7-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Alex\Desktop\Diploma\Project\TextMining"/>
+    <property name="java.runtime.version" value="1.7.0_17-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_17\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Alex\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files\maven\apache-maven-3.1.0\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\maven\apache-maven-3.1.0\bin;C:\Program Files\Java\jdk1.7.0_17\\bin;C:\Users\Alex\Desktop\JS7\JBoss\jboss-as-7.1.1.Final\jboss-as-7.1.1.Final\bin;C:\Users\Alex\Desktop\JS7\Tomcat\apache-tomcat-7.0.37-windows-x64\apache-tomcat-7.0.37\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files\forge\forge-distribution-1.3.3.Final\bin;C:\Program Files\ant\\bin;D:\Program Files\Flex\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\VisualSVN Server\bin;C:\grails\grails-2.3.4\bin;C:\hadoop\hadoop\hadoop\bin;C:\groovy\groovy-2.2.1\bin;C:\RailsInstaller3\Git\cmd;C:\RailsInstaller3\Ruby2.0.0\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby1.9.3\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Alex"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="Alex"/>
+    <property name="java.class.path" value="C:\Program Files\maven\apache-maven-3.1.0\boot\plexus-classworlds-2.4.2.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_17\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_17"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_17\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_17\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_17\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_17\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\maven\apache-maven-3.1.0"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.004" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc contributor]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc coverage]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc creator]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc date]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc description]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc format]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc identifier]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc language]"/>
+  <testcase time="0.01" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc publisher]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc relation]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc rights]"/>
+  <testcase time="0.01" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc source]"/>
+  <testcase time="0.009" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc subject]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc title]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://purl.org/dc/elements/1.1/ dc type]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/ xmp Advisory]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/ xmp BaseURL]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/ xmp CreateDate]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/ xmp CreatorTool]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/ xmp Identifier]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/ xmp MetadataDate]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/ xmp ModifierDate]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/ xmp Nickname]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/ xmp Thumbnails]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/rights/ xmpRights Certificate]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/rights/ xmpRights Marked]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/rights/ xmpRights Owner]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/rights/ xmpRights UsageTerms]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/rights/ xmpRights WebStatement]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM DerivedFrom]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM DocumentID]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM History]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM ManagedFrom]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM Manager]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM ManageTo]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM ManageUI]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM ManagerVariant]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM RenditionClass]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM RenditionParams]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM VersionID]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM Versions]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM LastURL]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM RenditionOf]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/mm/ xmpMM SaveID]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/bj/ xmpBJ JobRef]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/pdf/1.3/ pdf Keywords]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/pdf/1.3/ pdf PDFVersion]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/pdf/1.3/ pdf Producer]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/t/pg/ xmpTPg MaxPageSize]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/xap/1.0/t/pg/ xmpTPg NPages]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop AuthorsPosition]"/>
+  <testcase time="0.009" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop CaptionWriter]"/>
+  <testcase time="0.009" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop Category]"/>
+  <testcase time="0.009" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop City]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop Country]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop Credit]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop DateCreated]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop Headline]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop Instructions]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop Source]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop State]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop SupplementalCategories]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop TransmissionReference]"/>
+  <testcase time="0.011" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/photoshop/1.0/ photoshop Urgency]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff ImageWidth]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff ImageLength]"/>
+  <testcase time="0.009" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff BitsPerSample]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff Compression]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff PhotometricInterpretation]"/>
+  <testcase time="0.025" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff Orientation]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff SamplesPerPixel]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff PlanarConfiguration]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff YCbCrSubSampling]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff YCbCrPositioning]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff XResolution]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff YResolution]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff ResolutionUnit]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff TransferFunction]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff WhitePoint]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff PrimaryChromaticities]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff YCbCrCoefficients]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff ReferenceBlackWhite]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff DateTime]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff ImageDescription]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff Make]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff Model]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff Software]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff Artist]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/tiff/1.0/ tiff Copyright]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ExifVersion]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif FlashpixVersion]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ColorSpace]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ComponentsConfiguration]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif CompressedBitsPerPixel]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif PixelXDimension]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif PixelYDimension]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif UserComment]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif RelatedSoundFile]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif DateTimeOriginal]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif DateTimeDigitized]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ExposureTime]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif FNumber]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ExposureProgram]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif SpectralSensitivity]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ISOSpeedRatings]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif OECF]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ShutterSpeedValue]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ApertureValue]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif BrightnessValue]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ExposureBiasValue]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif MaxApertureValue]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif SubjectDistance]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif MeteringMode]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif LightSource]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif FocalLength]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif SubjectArea]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif FlashEnergy]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif FocalPlaneXResolution]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif FocalPlaneYResolution]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif FocalPlaneResolutionUnit]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif SubjectLocation]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ExposureIndex]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif SensingMethod]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif FileSource]"/>
+  <testcase time="0.005" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif SceneType]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif CustomRendered]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ExposureMode]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif WhiteBalance]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif DigitalZoomRatio]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif FocalLengthIn35mmFilm]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif SceneCaptureType]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GainControl]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif Contrast]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif Saturation]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif Sharpness]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif SubjectDistanceRange]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif ImageUniqueID]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSVersionID]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSAltitudeRef]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSAltitude]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSTimeStamp]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSSatellites]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSStatus]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSMeasureMode]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSDOP]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSSpeedRef]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSSpeed]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSTrackRef]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSTrack]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSImgDirectionRef]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSImgDirection]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSMapDatum]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSDestBearingRef]"/>
+  <testcase time="0.008" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSDestBearing]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSDestDistanceRef]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSDestDistance]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSProcessingMethod]"/>
+  <testcase time="0.007" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSAreaInformation]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSDifferential]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif SpatialFrequencyResponse]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif CFAPattern]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif DeviceSettingDescription]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif Flash]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSLatitude]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSLongitude]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSDestLatitude]"/>
+  <testcase time="0.006" classname="org.apache.xmpbox.TestValidatePermitedMetadata" name="checkExistence[http://ns.adobe.com/exif/1.0/ exif GPSDestLongitude]"/>
+</testsuite>

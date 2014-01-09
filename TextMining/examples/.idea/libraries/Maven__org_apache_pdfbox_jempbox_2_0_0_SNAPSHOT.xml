@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.pdfbox:jempbox:2.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/jempbox/2.0.0-SNAPSHOT/jempbox-2.0.0-20140105.165949-116.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/jempbox/2.0.0-SNAPSHOT/jempbox-2.0.0-20140105.165949-116-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/jempbox/2.0.0-SNAPSHOT/jempbox-2.0.0-20140105.165949-116-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
