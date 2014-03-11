@@ -1,6 +1,6 @@
 package logfeatures
 
-
+import org.apache.commons.logging.LogFactory
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
@@ -10,7 +10,11 @@ class BookController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+    private static final log = LogFactory.getLog(this)
+
     def index(Integer max) {
+        log.debug("Hey!")
+        println ("Hey!")
         params.max = Math.min(max ?: 10, 100)
         respond Book.list(params), model:[bookInstanceCount: Book.count()]
     }
@@ -20,7 +24,6 @@ class BookController {
     }
 
     def create() {
-        log.debug()
         respond new Book(params)
     }
 

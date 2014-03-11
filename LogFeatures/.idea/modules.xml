@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LogFeatures.iml" filepath="$PROJECT_DIR$/LogFeatures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LogFeatures-grailsPlugins.iml" filepath="$PROJECT_DIR$/LogFeatures-grailsPlugins.iml" />
     </modules>
   </component>
 </project>

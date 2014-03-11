@@ -93,27 +93,30 @@ environments {
     }
 }
 
+//def targetLogPath = "${userHome}/${appName}/logs"
 // log4j configuration
 log4j = {
     // Example of changing the log pattern for the default console appender:
     //
     appenders {
-        console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
-        file name: 'file', file:'${webappname}/WEB-INF/logs/myapp.log', layout:pattern(conversionPattern: '%c{2} %m%n')
+        console name: 'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
+//        file name: 'file', file: 'mylog.log', layout:pattern(conversionPattern: '%c{2} %m%n')
 
     }
 
-    debug  stdout: 'grails.app.controllers'
+//    error  'org.codehaus.groovy.grails.web.servlet',        // controllers
+//           'org.codehaus.groovy.grails.web.pages',          // GSP
+//           'org.codehaus.groovy.grails.web.sitemesh',       // layouts
+//           'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
+//           'org.codehaus.groovy.grails.web.mapping',        // URL mapping
+//           'org.codehaus.groovy.grails.commons',            // core / classloading
+//           'org.codehaus.groovy.grails.plugins',            // plugins
+//           'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
+//           'org.springframework',
+//           'org.hibernate',
+//           'net.sf.ehcache.hibernate'
 
-    error  'org.codehaus.groovy.grails.web.servlet',        // controllers
-           'org.codehaus.groovy.grails.web.pages',          // GSP
-           'org.codehaus.groovy.grails.web.sitemesh',       // layouts
-           'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
-           'org.codehaus.groovy.grails.web.mapping',        // URL mapping
-           'org.codehaus.groovy.grails.commons',            // core / classloading
-           'org.codehaus.groovy.grails.plugins',            // plugins
-           'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
-           'org.springframework',
-           'org.hibernate',
-           'net.sf.ehcache.hibernate'
+//    debug  file: 'grails.app.controllers.'
+    debug stdout: "grails.app.controllers"
+    debug stdout: 'org.codehaus.groovy.grails.web.servlet'
 }
