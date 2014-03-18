@@ -27,6 +27,27 @@
     <file path="/ComponentController.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1386669959303" ignored="false" />
     <file path="/CourseController.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1386670985426" ignored="false" />
     <file path="/a.dummy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1386783443050" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/views/auth/login.gsp" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394990490944" ignored="false" />
+    <file path="/login.gsp" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394990285529" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/i18n/shiro.properties" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394988983408" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/views/_menu/_user.gsp" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394988958522" ignored="false" />
+    <file path="/_user.gsp" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394988927544" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/i18n/messages.properties" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394990398163" ignored="false" />
+    <file path="/messages.properties" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394990398163" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/views/login/auth.gsp" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394989942468" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/conf/BuildConfig.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394996097846" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/conf/DataSource.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1395048790961" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/target/work/tomcat/work/Tomcat/localhost/EducationalPortal/grails-resources/bootstrap/dist/css/bootstrap.css" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394992062304" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/target/work/tomcat/work/Tomcat/localhost/EducationalPortal/grails-resources/bootstrap/js/tests/vendor/jquery.js" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394992062304" ignored="false" />
+    <file path="/fragment.java" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394992183766" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/controllers/edu/dm/log/Log.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394992086271" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/controllers/edu/dm/course/Component.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394992103568" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/controllers/edu/dm/course/ComponentType.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394992103568" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/controllers/edu/dm/course/Course.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394992103568" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/controllers/edu/dm/user/User.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394992136896" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/grails-app/controllers/edu/dm/user/Role.groovy" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394992136896" ignored="false" />
+    <file path="$PROJECT_DIR$/../EducationalPortal/target/stacktrace.log" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394996292053" ignored="false" />
+    <file path="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" changelist="2eca2ffb-e01d-49b8-a61d-1e8a713a8a26" time="1394996439072" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +62,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -77,7 +99,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -86,7 +107,44 @@
     <favorites_list name="MongoAndHibernate" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="31" selection-start="2988" selection-end="2988" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSource.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="53" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.4857143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -97,7 +155,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/mongoandhibernate/PersonController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/mongoandhibernate/PetController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/mongoandhibernate/Pet.groovy" />
@@ -112,14 +169,15 @@
         <option value="$PROJECT_DIR$/grails-app/controllers/mongoandhibernate/ComponentController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/mongoandhibernate/UserController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/mongoandhibernate/CourseController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1378" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -154,23 +212,17 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ShiroTest" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RunManager" selected="Grails.Grails:MongoAndHibernate">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -181,12 +233,31 @@
       <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -215,19 +286,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -333,8 +391,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -346,7 +404,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.175" sideWeight="0.32242227" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17477204" sideWeight="0.672" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -358,7 +416,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6704" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.67757773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -427,43 +485,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="6" selection-start="4000" selection-end="4000" vertical-scroll-proportion="4.518421" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/mongoandhibernate/Pet.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.21174377" />
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/mongoandhibernate/ComponentType.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="66" selection-end="66" vertical-scroll-proportion="-1.0625" />
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/mongoandhibernate/Role.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="34" selection-start="73" selection-end="73" vertical-scroll-proportion="0.08717949" />
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/mongoandhibernate/User.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="287" selection-end="287" vertical-scroll-proportion="-4.25" />
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/mongoandhibernate/Course.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="38" selection-start="102" selection-end="102" vertical-scroll-proportion="-1.4166666" />
@@ -488,18 +509,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/mongoandhibernate/PersonController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.3767313" />
@@ -508,14 +517,6 @@
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/mongoandhibernate/UserController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="23" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/mongoandhibernate/Component.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="71" selection-start="156" selection-end="156" vertical-scroll-proportion="0.29411766" />
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/mongoandhibernate/CourseController.groovy">
@@ -533,6 +534,59 @@
         <state line="3" column="24" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0882353" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/mongoandhibernate/Component.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="33" selection-end="33" vertical-scroll-proportion="0.061705988" />
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/spring/resources.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.5343642">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="31" selection-start="2988" selection-end="2988" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="53" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.4857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="grailsSettings">
     <option name="map">
@@ -540,7 +594,7 @@
         <entry key="MongoAndHibernate">
           <value>
             <GrailsSettings>
-              <option name="buildConfigCrc" value="39363235" />
+              <option name="buildConfigCrc" value="1995220050" />
               <option name="pluginDependenciesCrc" value="-181327476" />
               <option name="properties">
                 <map>
