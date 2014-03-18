@@ -1,21 +1,15 @@
-import edu.dm.security.Role
-import edu.dm.security.User
-import edu.dm.security.UserRole
+import org.apache.shiro.crypto.hash.Sha256Hash;
+
+import edu.dm.security.ShiroUser;
+
+
 
 class BootStrap {
 
     def init = { servletContext ->
-        def adminRole = new Role(authority: 'ROLE_ADMIN').save(flush: true)
-        def userRole = new Role(authority: 'ROLE_USER').save(flush: true)
-
-        def testUser = new User(username: 'me', password: 'password')
-        testUser.save(flush: true)
-
-        UserRole.create testUser, adminRole, true
-
-//        assert User.count() == 1
-//        assert Role.count() == 2
-//        assert UserRole.count() == 1
+		def user = new ShiroUser(username: "user123", passwordHash: new Sha256Hash("password").toHex())
+		user.addToPermissions("*:*")
+		user.save()
     }
     def destroy = {
     }

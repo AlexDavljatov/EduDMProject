@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-        %{--    <form role="form" id='loginForm' class='form-horizontal' controller="auth" action="signIn" method='POST' autocomplete='off'>
+            <form role="form" id='loginForm' class='form-horizontal' controller="auth" action="signIn" method='POST' autocomplete='off'>
                 <div class="form-group ${hasErrors(bean: _DemoPageInstance, field: 'name', 'error')} ">
                     <h3> <g:message code="security.login.header"/> </h3>
                 </div>
@@ -33,7 +33,19 @@
                         </div>
                     </div>
 
+                   %{-- <div class="form-group">
+                        <label class="col-lg-10 checkbox" for="rememberMe">
+                            <input class="col-lg-3" type="checkbox" value="${rememberMe}" name="rememberMe" id="rememberMe" >
+                            ${message(code: 'security.agreement.rememberMe', default: 'Remember me?')}
+                        </label>
+                    </div>--}%
 
+                  %{--  <div class="form-group">
+                        <label class="col-lg-10 checkbox" for="agreement">
+                            <input class="col-lg-3" type="checkbox" value="" name="agreement" id="agreement" >
+                            ${message(code: 'security.agreement.label', default: 'I have read and agree with the Terms of Use.')}
+                        </label>
+                    </div>--}%
                 </div>
 
 
@@ -47,7 +59,7 @@
                 <div class="form-group">
                     <input type='submit' id="submit" class="btn btn-success" value='${message(code: "security.login.button")}'/>
                 </div>
-            </form>--}%
+            </form>
         </div>
         <div class="col-md-3"></div>
     </div>

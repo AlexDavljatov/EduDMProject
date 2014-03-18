@@ -61,9 +61,9 @@ grails.project.dependency.resolution = {
         compile ":scaffolding:2.0.2"
         compile ':cache:1.1.1'
         compile ":kickstart-with-bootstrap:1.1.0"
-        compile ':spring-security-core:2.0-RC2'
         compile ":mongodb:1.3.3"
-        // plugins needed at runtime but not for compilation
+		compile ":shiro:1.2.0"
+		// plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.8" // or
 //        runtime ":hibernate4:4.3.1.1"
         runtime ":database-migration:1.3.8"
