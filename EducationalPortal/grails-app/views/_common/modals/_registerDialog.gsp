@@ -1,34 +1,42 @@
+<%@ page import="edu.dm.security.ShiroUser" %>
+
 <div class="modal fade" id="RegisterModal" role="dialog">
 	<div class="modal-dialog">
 		<div class="modal-content">
-	    	<g:form controller="login" action="register" class="form-horizontal" method="post" name="register_form">
+	    	<g:form controller="shiroUser" action="save" class="form-horizontal" method="post" name="register_form">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">x</button>
 					<h3><g:message code="security.register.title"/></h3>
 				</div>
 				<div class="modal-body">
-					<div class="form-group">
-						<label class="col-lg-2 control-label" for="firstname">${message(code: 'security.firstname.label', default: 'Firstname')}</label>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="username">${message(code: 'security.username.label', default: 'Username')}</label>
+                        <div   class="col-lg-10">
+                            <input class="form-control" name="username" id="username" type="text"  value="${shiroUserInstance?.username}"  placeholder="${message(code: 'security.username.label', default: 'Username')}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+						<label class="col-lg-2 control-label" for="firstName">${message(code: 'security.firstname.label', default: 'FirstName')}</label>
 						<div   class="col-lg-10">
-							<input class="form-control" name="firstname" id="firstname" type="text" placeholder="${message(code: 'security.firstname.label', default: 'Firstname')}">
+							<input class="form-control" name="firstName" id="firstName" type="text"  value="${shiroUserInstance?.firstName}"  placeholder="${message(code: 'security.firstname.label', default: 'FirstName')}">
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-lg-2 control-label" for="lastname">${message(code: 'security.lastname.label', default: 'Lastname')}</label>
+						<label class="col-lg-2 control-label" for="lastName">${message(code: 'security.lastname.label', default: 'LastName')}</label>
 						<div   class="col-lg-10">
-							<input class="form-control" name="lastname" id="lastname" type="text" placeholder="${message(code: 'security.lastname.label', default: 'Lastname')}">
+							<input class="form-control" name="lastName" id="lastName" type="text"  value="${shiroUserInstance?.lastName}" placeholder="${message(code: 'security.lastname.label', default: 'LastName')}">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-lg-2 control-label" for="email">${message(code: 'security.email.label', default: 'Email')}</label>
 						<div   class="col-lg-10">
-							<input class="form-control" name="email" id="email" type="text" placeholder="${message(code: 'security.email.label', default: 'Email')}">
+							<input class="form-control" name="email" id="email" type="text"  value="${shiroUserInstance?.email}" placeholder="${message(code: 'security.email.label', default: 'Email')}">
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-lg-2 control-label" for="password">${message(code: 'security.password.label', default: 'Password')}</label>
+						<label class="col-lg-2 control-label" for="passwordHash">${message(code: 'security.password.label', default: 'Password')}</label>
 						<div   class="col-lg-10">
-							<input class="form-control" name="password" id="password" type="password" placeholder="${message(code: 'security.password.label', default: 'Password')}">
+							<input class="form-control" name="passwordHash" id="passwordHash" type="password"  value="${shiroUserInstance?.passwordHash}" placeholder="${message(code: 'security.password.label', default: 'Password')}">
 						</div>
 					</div>
 					<div class="form-group">
