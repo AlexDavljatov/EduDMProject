@@ -3,8 +3,6 @@ package edu.dm.security
 import org.apache.shiro.SecurityUtils
 import org.apache.shiro.authc.UsernamePasswordToken
 
-import static edu.dm.security.ShiroUser.*
-
 /**
  * SignUpController
  * A controller class handles incoming web requests and performs actions such as redirects, rendering views and so on.
@@ -15,7 +13,7 @@ class SignUpController {
     def shiroSecurityService
 
     def index() {
-        ShiroUser user = new ShiroUser()
+        User user = new User()
         [user: user]
     }
 
@@ -26,7 +24,7 @@ class SignUpController {
     def register() {
 
         // Check to see if the username already exists
-        def user = ShiroUser.findByUsername(params.username)
+        def user = User.findByUsername(params.username)
         if (user) {
             flash.message = "User already exists with the username '${params.username}'"
             render('index')
@@ -44,7 +42,7 @@ class SignUpController {
             // Passwords match. Let's attempt to save the user
             else {
                 // Create user
-                user = new ShiroUser(
+                user = new User(
                         username: params.username,
                         passwordHash: shiroSecurityService.encodePassword(params.password)
                 )
@@ -52,7 +50,7 @@ class SignUpController {
                 if (user.save()) {
 
                     // Add USER role to new user
-                    user.addToRoles(ShiroRole.findByName('ROLE_USER'))
+                    user.addToRoles(Role.findByName('ROLE_USER'))
 
                     // Login user
                     def authToken = new UsernamePasswordToken(user.username, params.password)

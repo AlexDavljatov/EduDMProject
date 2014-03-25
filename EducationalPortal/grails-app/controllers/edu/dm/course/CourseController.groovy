@@ -1,5 +1,7 @@
 package edu.dm.course
 
+import edu.dm.security.User
+import org.apache.shiro.SecurityUtils
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
@@ -38,12 +40,19 @@ class CourseController {
             return
         }
 
+        def user = User.findByUsername(SecurityUtils.getSubject().principal)
+        user.myCourses.add(courseInstance)
+        courseInstance.author = user
+        user.save flush: true
+
         if (courseInstance.hasErrors()) {
             respond courseInstance.errors, view: 'create'
             return
         }
 
+
         courseInstance.save flush: true
+
 
         request.withFormat {
             form {

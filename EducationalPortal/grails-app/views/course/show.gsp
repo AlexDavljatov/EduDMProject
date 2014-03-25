@@ -35,8 +35,23 @@
 				</td>
 				
 			</tr>
-		
-		</tbody>
+
+        <tr class="prop">
+            <td valign="top" style="text-align: left;" class="value">
+                <g:form controller="user" action="enrollCourse">
+                    <input type="hidden" name="course_id" value="${fieldValue(bean: courseInstance, field: "id")}"/>
+                    <div class="form-actions margin-top-medium">
+                        <g:submitButton name="create" class="btn btn-primary"
+                                        value="${message(code: 'default.button.enroll.label', default: 'Enroll!')}"/>
+
+                    </div>
+                </g:form>
+            </td>
+
+        </tr>
+
+
+        </tbody>
 	</table>
 </section>
 

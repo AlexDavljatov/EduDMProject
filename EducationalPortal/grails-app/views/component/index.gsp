@@ -19,10 +19,7 @@
 			
 				<g:sortableColumn property="name" title="${message(code: 'component.name.label', default: 'Name')}" />
 			
-				<g:sortableColumn property="contentPath" title="${message(code: 'component.contentPath.label', default: 'Content Path')}" />
-			
-				<g:sortableColumn property="type" title="${message(code: 'component.type.label', default: 'Type')}" />
-			
+
 			</tr>
 		</thead>
 		<tbody>
@@ -30,10 +27,6 @@
 			<tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
 			
 				<td><g:link action="show" id="${componentInstance.id}">${fieldValue(bean: componentInstance, field: "name")}</g:link></td>
-			
-				<td>${fieldValue(bean: componentInstance, field: "contentPath")}</td>
-			
-				<td>${fieldValue(bean: componentInstance, field: "type")}</td>
 			
 			</tr>
 		</g:each>

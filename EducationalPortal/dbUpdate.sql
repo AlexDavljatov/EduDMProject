@@ -1,0 +1,10 @@
+drop table if exists user_course;
+drop table if exists user_component;
+drop table if exists course_component;
+drop table if exists user_roles;
+drop table if exists user_permissions;
+drop table if exists role_permissions;
+drop table if exists role;
+drop table if exists course;
+drop table if exists component;
+drop table if exists user;

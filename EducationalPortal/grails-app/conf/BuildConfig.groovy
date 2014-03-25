@@ -35,6 +35,7 @@ grails.project.dependency.resolution = {
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
 
+//        mavenRepo "http://mvnrepository.com/"
         grailsPlugins()
         grailsHome()
         mavenLocal()
@@ -49,14 +50,21 @@ grails.project.dependency.resolution = {
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-        runtime 'mysql:mysql-connector-java:5.1.27'
+        build "nz.ac.waikato.cms.weka:weka-stable:3.6.10"
+        build "org.apache.mahout:mahout-core:0.9"
+        build "org.apache.mahout:mahout-integration:0.9"
+        build "org.apache.mahout:mahout-math:0.9"
+//        build "org.apache.mahout:mahout-parent:0.3"
+
+        runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
+
+
     }
 
     plugins {
         // plugins for the build system only
         build ":tomcat:7.0.50.1"
-
         // plugins for the compile step
         compile ":scaffolding:2.0.2"
         compile ':cache:1.1.1'
@@ -65,7 +73,7 @@ grails.project.dependency.resolution = {
 		compile ":shiro:1.2.0"
 		// plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.8" // or
-//        runtime ":hibernate4:4.3.1.1"
+       // runtime ":hibernate4:4.3.1.1"
         runtime ":database-migration:1.3.8"
         runtime ":jquery:1.11.0"
         runtime ":resources:1.2.1"

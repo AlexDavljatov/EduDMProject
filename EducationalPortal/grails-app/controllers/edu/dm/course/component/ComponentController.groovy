@@ -1,5 +1,7 @@
 package edu.dm.course.component
 
+import edu.dm.security.User
+import org.apache.log4j.Logger
 import org.apache.shiro.SecurityUtils
 import org.apache.shiro.session.Session
 import org.apache.shiro.subject.Subject
@@ -13,6 +15,8 @@ import grails.transaction.Transactional
  */
 @Transactional(readOnly = true)
 class ComponentController {
+
+    private static Logger log = Logger.getLogger(this)
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -34,22 +38,32 @@ class ComponentController {
         respond new Component(params)
     }
 
+
+    /*//TODO: exception handling
+    @Transactional
     def upload() {
         def f = request.getFile('myFile')
-        def path = params["fileName"]
-        println params
+        def curComp = Component.findById(Long.valueOf(params.comp_id))
+        def compName = curComp.name
+
+        Subject currentUser = SecurityUtils.getSubject();
+
         if (f.empty) {
             flash.message = 'file cannot be empty'
             render(view: 'uploadForm')
             return
         }
 //        println  (SecurityUtils.subject?.principal)
-        println System.getProperty("java.io.tmpdir") + path + "." + f.getOriginalFilename().split()
-        f.transferTo(new File(System.getProperty("java.io.tmpdir") + path + "." + f.getContentType().split("/")[1]))
+//        println f.getContentType()
+        String contentPath = System.getProperty("java.io.tmpdir") + currentUser.principal + '_' + compName + "." + f.getContentType().toString().split("/")[1]
+        log.debug contentPath
+        f.transferTo(new File(contentPath))
+        curComp.contentPath = contentPath
+        curComp.save flush: true
         redirect(action: "list")
-    }
+    }*/
 
-    @Transactional
+     @Transactional
     def save(Component componentInstance) {
         if (componentInstance == null) {
             notFound()
@@ -61,7 +75,17 @@ class ComponentController {
             return
         }
 
+        def user = User.findByUsername(SecurityUtils.getSubject().principal)
+        user.myComponents.add(componentInstance)
+        log.debug(user)
+        user.save flush:true
+        componentInstance.author = user
+
+
+//        log.debug(componentInstance.author)
+
         componentInstance.save flush:true
+
 
         request.withFormat {
             form {
