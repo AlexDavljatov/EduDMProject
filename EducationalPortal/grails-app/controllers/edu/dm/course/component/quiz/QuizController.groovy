@@ -47,7 +47,7 @@ class QuizController {
         }
 
         def user = User.findByUsername(SecurityUtils.getSubject().principal)
-        user.myComponents.add(quizInstance)
+        user.myQuizes.add(quizInstance)
         log.debug(user)
         user.save flush:true
         quizInstance.author = user

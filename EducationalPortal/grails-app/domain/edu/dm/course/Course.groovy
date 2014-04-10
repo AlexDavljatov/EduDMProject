@@ -6,8 +6,8 @@ import edu.dm.course.component.quiz.Quiz
 import edu.dm.security.User
 
 class Course {
-//    static hasMany = [components: Component, quizes: Quiz, materials: Material]
-    static hasMany = [components: Component]
+    static hasMany = [quizes: Quiz, materials: Material]
+//    static hasMany = [components: Component]
     static belongsTo = [author: User]
 
     String name

@@ -20,7 +20,8 @@ class User {
             permissions: String,
             myCourses: Course,
             courses: Course,
-            myComponents: Component,
+            myQuizes: Quiz,
+            myMaterilas: Material,
             scores: Score
     ]
 

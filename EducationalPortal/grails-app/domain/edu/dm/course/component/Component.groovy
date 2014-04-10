@@ -3,7 +3,7 @@ package edu.dm.course.component
 import edu.dm.course.Course
 import edu.dm.security.User
 
-class Component {
+abstract class Component {
     static belongsTo = [author: User]
 
     String name

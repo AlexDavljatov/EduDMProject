@@ -18,14 +18,6 @@
 				</div>
 			</div>
 
-			<div class="${hasErrors(bean: materialInstance, field: 'author', 'error')} ">
-				<label for="author" class="control-label"><g:message code="material.author.label" default="Author" /></label>
-				<div>
-					<g:select class="form-control" id="author" name="author.id" from="${edu.dm.security.User.list()}" optionKey="id" value="${materialInstance?.author?.id}" class="many-to-one" noSelection="['null': '']"/>
-					<span class="help-inline">${hasErrors(bean: materialInstance, field: 'author', 'error')}</span>
-				</div>
-			</div>
-
 			<div class="${hasErrors(bean: materialInstance, field: 'contentPath', 'error')} ">
 				<label for="contentPath" class="control-label"><g:message code="material.contentPath.label" default="Content Path" /></label>
 				<div>

@@ -23,9 +23,10 @@
 				
 			</tr>
 		
+%{--
 			<tr class="prop">
 				<td valign="top" class="name"><g:message code="course.components.label" default="Components" /></td>
-				
+
 				<td valign="top" style="text-align: left;" class="value">
 					<ul>
 					<g:each in="${courseInstance.components}" var="c">
@@ -33,8 +34,31 @@
 					</g:each>
 					</ul>
 				</td>
-				
+
 			</tr>
+--}%
+        <tr class="prop">
+            <td valign="top" class="name"><g:message code="course.materials.label" default="Materials" /></td>
+            <td valign="top" style="text-align: left;" class="value">
+                <ul>
+                    <g:each in="${courseInstance.materials}" var="c">
+                        <li><g:link controller="material" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
+                    </g:each>
+                </ul>
+            </td>
+        </tr>
+
+        <tr class="prop">
+            <td valign="top" class="name"><g:message code="course.quizes.label" default="Quizes" /></td>
+            <td valign="top" style="text-align: left;" class="value">
+                <ul>
+                    <g:each in="${courseInstance.quizes}" var="c">
+                        <li><g:link controller="quiz" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
+                    </g:each>
+                </ul>
+            </td>
+        </tr>
+
 
         <tr class="prop">
             <td valign="top" style="text-align: left;" class="value">

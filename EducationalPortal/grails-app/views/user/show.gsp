@@ -43,21 +43,49 @@
 				<td valign="top" class="value">${fieldValue(bean: userInstance, field: "lastName")}</td>
 				
 			</tr>
-		
-			<tr class="prop">
+
+%{--
+        <tr class="prop">
 				<td valign="top" class="name"><g:message code="user.myComponents.label" default="Components" /></td>
-				
-				<td valign="top" style="text-align: left;" class="value">
-					<ul>
-					<g:each in="${userInstance.myComponents}" var="c">
-						<li><g:link controller="component" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
-					</g:each>
-					</ul>
-				</td>
-				
-			</tr>
-		
-			<tr class="prop">
+
+            <td valign="top" style="text-align: left;" class="value">
+                <ul>
+                <g:each in="${userInstance.myComponents}" var="c">
+                    <li><g:link controller="component" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
+                </g:each>
+                </ul>
+            </td>
+
+        </tr>
+--}%
+        <tr class="prop">
+            <td valign="top" class="name"><g:message code="user.myMaterials.label" default="Materials" /></td>
+
+            <td valign="top" style="text-align: left;" class="value">
+                <ul>
+                    <g:each in="${userInstance.myMaterials}" var="c">
+                        <li><g:link controller="material" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
+                    </g:each>
+                </ul>
+            </td>
+
+        </tr>
+
+        <tr class="prop">
+            <td valign="top" class="name"><g:message code="user.myQuizes.label" default="Quizes" /></td>
+
+            <td valign="top" style="text-align: left;" class="value">
+                <ul>
+                    <g:each in="${userInstance.myQuizes}" var="c">
+                        <li><g:link controller="quiz" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></li>
+                    </g:each>
+                </ul>
+            </td>
+
+        </tr>
+
+
+        <tr class="prop">
 				<td valign="top" class="name"><g:message code="user.courses.label" default="Courses" /></td>
 				
 				<td valign="top" style="text-align: left;" class="value">

@@ -43,9 +43,21 @@
 				<td valign="top" class="value">${fieldValue(bean: materialInstance, field: "contentPath")}</td>
 				
 			</tr>
-		
 
-		</tbody>
+			<tr class="prop">
+                <div class="${hasErrors(bean: materialInstance, field: 'author', 'error')} ">
+                    <label for="author" class="control-label"><g:message code="material.author.label" default="Author" /></label>
+                    <div>
+                        <g:select class="form-control" id="author" name="author.id" from="${edu.dm.security.User.list()}" optionKey="id" value="${materialInstance?.author?.id}" class="many-to-one" noSelection="['null': '']"/>
+                        <span class="help-inline">${hasErrors(bean: materialInstance, field: 'author', 'error')}</span>
+                    </div>
+                </div>
+            </tr>
+
+
+
+
+        </tbody>
 	</table>
 
     <g:uploadForm controller="material" action="upload">

@@ -76,7 +76,7 @@ class MaterialController {
         }
 
         def user = User.findByUsername(SecurityUtils.getSubject().principal)
-        user.myComponents.add(materialInstance)
+        user.myMaterilas.add(materialInstance)
 //        log.debug(user)
         user.save flush:true
         materialInstance.author = user
