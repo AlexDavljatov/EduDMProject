@@ -27,6 +27,8 @@
 			
 				<g:sortableColumn property="passwordHash" title="${message(code: 'user.passwordHash.label', default: 'Password Hash')}" />
 			
+				<g:sortableColumn property="aboutMe" title="${message(code: 'user.aboutMe.label', default: 'About Me')}" />
+			
 			</tr>
 		</thead>
 		<tbody>
@@ -42,6 +44,8 @@
 				<td>${fieldValue(bean: userInstance, field: "lastName")}</td>
 			
 				<td>${fieldValue(bean: userInstance, field: "passwordHash")}</td>
+			
+				<td>${fieldValue(bean: userInstance, field: "aboutMe")}</td>
 			
 			</tr>
 		</g:each>

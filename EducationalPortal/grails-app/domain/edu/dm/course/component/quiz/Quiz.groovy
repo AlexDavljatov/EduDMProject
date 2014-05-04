@@ -40,4 +40,7 @@ class Quiz extends Component{
 //	public String toString() {
 //		return "${name}";
 //	}
+    def attributes(){
+
+    }
 }

@@ -15,6 +15,8 @@ class CourseController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+    def userCourseService
+
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Course.list(params), model: [courseInstanceCount: Course.count()]
@@ -31,6 +33,10 @@ class CourseController {
 
     def create() {
         respond new Course(params)
+    }
+
+    def clusterize(){
+        render userCourseService.findKClusters(Course.findById(Long.valueOf(params.course_id)), 3).clusterResultsToString()
     }
 
     @Transactional

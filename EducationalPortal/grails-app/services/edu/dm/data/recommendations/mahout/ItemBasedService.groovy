@@ -1,5 +1,6 @@
 package edu.dm.data.recommendations.mahout
 
+import edu.dm.security.User
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel
 import org.apache.mahout.cf.taste.impl.recommender.CachingRecommender
 import org.apache.mahout.cf.taste.impl.recommender.GenericItemBasedRecommender
@@ -17,6 +18,8 @@ import org.springframework.transaction.annotation.Transactional
 @Transactional
 class ItemBasedService {
 
+    def mahoutIntegrationDBService
+
     def doRecommend(String dataPath) {
         DataModel model = new FileDataModel(new File("data.txt"));
         // Construct the list of pre-computed correlations
@@ -29,5 +32,9 @@ class ItemBasedService {
 //        ...
         List<RecommendedItem> recommendations =
             cachingRecommender.recommend(1234, 10);
+    }
+
+    def doRecommendations(User user){
+//        DataModel model =
     }
 }

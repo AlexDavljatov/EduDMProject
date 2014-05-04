@@ -41,4 +41,9 @@ class ClassificationService {
         eval.evaluateModel(cls, train);
         System.out.println(eval.toSummaryString("\nResults\n\n", false));
     }
+
+    def classifyCrossValidation(Instances data){
+
+    }
+
 }

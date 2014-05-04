@@ -13,14 +13,16 @@ import weka.core.converters.ConverterUtils
 @Transactional
 class RegressionService {
 
-    def doRegression() {
-        Instances data = ConverterUtils.DataSource.read("C:\\Users\\Alex\\Google Диск\\Diploma\\weka\\svn\\WekaMvn\\src\\main\\resources\\houses.arff");
-        data.setClassIndex(data.numAttributes() - 1);
-        LinearRegression model = new LinearRegression();
-        model.buildClassifier(data);
-        System.out.println(model);
-        Instance myHouse = data.lastInstance();
-        double price = model.classifyInstance(myHouse);
-        System.out.println(price);
+    def doLinearRegression(Instances data){
+        data.setClassIndex(data.numAttributes() - 1)
+        LinearRegression model = new LinearRegression()
+        model.buildClassifier(data)
+        return model
+    }
+
+    def doLinearRegression(Instances data, Instance entry){
+        def model = doLinearRegression(data)
+        double result = model.classifyInstance(entry)
+        return result
     }
 }

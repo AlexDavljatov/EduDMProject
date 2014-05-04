@@ -1,3 +1,4 @@
+import edu.dm.security.User
 import org.apache.shiro.authc.AccountException
 import org.apache.shiro.authc.IncorrectCredentialsException
 import org.apache.shiro.authc.UnknownAccountException
@@ -22,7 +23,7 @@ class ShiroDbRealm {
         // Get the user with the given username. If the user is not
         // found, then they don't have an account and we throw an
         // exception.
-        def user = ShiroUser.findByUsername(username)
+        def user = User.findByUsername(username)
         if (!user) {
             throw new UnknownAccountException("No account found for user [${username}]")
         }
@@ -31,7 +32,7 @@ class ShiroDbRealm {
 
         // Now check the user's password against the hashed value stored
         // in the database.
-        def account = new SimpleAccount(username, user.passwordHash, "ShiroDbRealm")
+        def account = new SimpleAccount(username, user.passwordHash, "DbRealm")
         if (!credentialMatcher.doCredentialsMatch(authToken, account)) {
             log.info "Invalid password (DB realm)"
             throw new IncorrectCredentialsException("Invalid password for user '${username}'")
@@ -41,7 +42,7 @@ class ShiroDbRealm {
     }
 
     def hasRole(principal, roleName) {
-        def roles = ShiroUser.withCriteria {
+        def roles = User.withCriteria {
             roles {
                 eq("name", roleName)
             }
@@ -52,7 +53,7 @@ class ShiroDbRealm {
     }
 
     def hasAllRoles(principal, roles) {
-        def r = ShiroUser.withCriteria {
+        def r = User.withCriteria {
             roles {
                 'in'("name", roles)
             }
@@ -68,7 +69,7 @@ class ShiroDbRealm {
         //
         // First find all the permissions that the user has that match
         // the required permission's type and project code.
-        def user = ShiroUser.findByUsername(principal)
+        def user = User.findByUsername(principal)
         def permissions = user.permissions
 
         // Try each of the permissions found and see whether any of
@@ -97,7 +98,7 @@ class ShiroDbRealm {
         // If not, does he gain it through a role?
         //
         // Get the permissions from the roles that the user does have.
-        def results = ShiroUser.executeQuery("select distinct p from ShiroUser as user join user.roles as role join role.permissions as p where user.username = '$principal'")
+        def results = User.executeQuery("select distinct p from ShiroUser as user join user.roles as role join role.permissions as p where user.username = '$principal'")
 
         // There may be some duplicate entries in the results, but
         // at this stage it is not worth trying to remove them. Now,
