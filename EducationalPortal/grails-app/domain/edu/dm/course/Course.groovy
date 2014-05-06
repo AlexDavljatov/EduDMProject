@@ -10,7 +10,6 @@ import weka.core.Attribute
 
 class Course {
     static hasMany = [lectures: Lecture, categories: String, participants: Party]
-//    static hasMany = [components: Component]
     static belongsTo = [author: User]
 
 
