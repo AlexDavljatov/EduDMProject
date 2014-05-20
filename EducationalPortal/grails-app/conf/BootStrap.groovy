@@ -20,19 +20,28 @@ class BootStrap {
 		adminRole.save()
 
 		def mentorRole = new Role(name: "Mentor")
-		adminRole.addToPermissions("*:*")
-		adminRole.save()
+		mentorRole.addToPermissions("*:*")
+		mentorRole.save()
 
 		
 		def studentRole = new Role(name: "Student")
-		adminRole.addToPermissions("*:*")
-		adminRole.save()
-
+		studentRole.addToPermissions("*:*")
+		studentRole.save()
+		
+		def admin = new User(username: "admin", passwordHash: new Sha256Hash("password").toHex(),
+			firstName: "admin", lastName: "admin", email: "admin@aa.aa")
+			admin.addToPermissions(adminRole)
+			admin.save flush: true
 				
+		def mentor = new User(username: "mentor", passwordHash: new Sha256Hash("password").toHex(),
+				firstName: "mentor", lastName: "mentor", email: "mentor@aa.aa")
+				admin.addToPermissions(mentorRole)
+				admin.save flush: true
+			
 		for (i in 1..10) {
             def user = new User(username: "user_${i}", passwordHash: new Sha256Hash("password").toHex(),
                     firstName: "aaa${i}", lastName: "bbb${i}", email: "aa${i}@aa.aa")
-            user.addToPermissions("*:*")
+            user.addToPermissions(studentRole)
             user.save flush: true
         }
 
