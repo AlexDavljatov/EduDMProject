@@ -60,11 +60,11 @@
         <tr class="prop">
             <td valign="top" class="name"><g:message code="course.author.label" default="Final Score" /></td>
 
-            <td valign="top" class="value">${score}</td>
+            <td valign="top" class="value">${fscore}</td>
 
         </tr>
         <tr class="prop">
-            <td valign="top" class="name"><g:message code="course.author.label" default="Final Score" /></td>
+            <td valign="top" class="name"><g:message code="course.author.label" default="Predicted Score" /></td>
 
             <td valign="top" class="value">${score}</td>
 

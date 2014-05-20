@@ -4,6 +4,7 @@ import edu.dm.course.lecture.Lecture
 import edu.dm.party.Party
 import edu.dm.score.user.course.UserCourseScore
 import edu.dm.score.user.quiz.UserQuizScore
+import edu.dm.security.Role
 import edu.dm.security.User
 import org.apache.shiro.crypto.hash.Sha256Hash;
 
@@ -14,7 +15,21 @@ class BootStrap {
 
 
     def init = { servletContext ->
-        for (i in 1..10) {
+        def adminRole = new Role(name: "Administrator")		
+		adminRole.addToPermissions("*:*")
+		adminRole.save()
+
+		def mentorRole = new Role(name: "Mentor")
+		adminRole.addToPermissions("*:*")
+		adminRole.save()
+
+		
+		def studentRole = new Role(name: "Student")
+		adminRole.addToPermissions("*:*")
+		adminRole.save()
+
+				
+		for (i in 1..10) {
             def user = new User(username: "user_${i}", passwordHash: new Sha256Hash("password").toHex(),
                     firstName: "aaa${i}", lastName: "bbb${i}", email: "aa${i}@aa.aa")
             user.addToPermissions("*:*")

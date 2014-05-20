@@ -29,8 +29,9 @@ class UserController {
     def finalScore() {
         def user = User.findByUsername(SecurityUtils.getSubject().principal)
         def course = Course.findById(Long.valueOf(params.course_id))
+		def fscore = UserCourseScore.findByCourseAndUser(course, user)
         def score = userCourseService.computeFinalScore(course, user)
-        [course: course, score: score]
+        [course: course, score: score, fscore: fscore?.finalScore]
     }
 
     def index(Integer max) {

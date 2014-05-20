@@ -16,7 +16,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class MaterialController {
 
-//    private Logger log = Logger.getLogger(this)
+    private static Logger log = Logger.getLogger(this)
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -43,7 +43,7 @@ class MaterialController {
     def upload() {
 
         def f = request.getFile('myFile')
-        def curComp = Component.findById(Long.valueOf(params.comp_id))
+        def curComp = Material.findById(Long.valueOf(params.comp_id))
         def compName = curComp.name
 
         Subject currentUser = SecurityUtils.getSubject();
@@ -55,12 +55,17 @@ class MaterialController {
         }
 //        println  (SecurityUtils.subject?.principal)
 //        println f.getContentType()
-        String contentPath = System.getProperty("java.io.tmpdir") + currentUser.principal + '_' + compName + "." + f.getContentType().toString().split("/")[1]
-//        log.debug contentPath
+//        String contentPath = System.getProperty("java.io.tmpdir") + currentUser.principal + '_' + compName + "." + f.getContentType().toString().split("/")[1]
+		String contentPath = 'C:/Users/Davliatov/' + currentUser.principal + '_' + compName + "." + f.getContentType().toString().split("/")[1]
+		
+		//        log.debug contentPath
         f.transferTo(new File(contentPath))
         curComp.contentPath = contentPath
-        curComp.save flush: true
-        redirect(controller: "material",  action: "list")
+        curComp.type = f.getContentType().toString()
+		curComp.save flush: true
+		log.debug(curComp.contentPath)
+		log.debug(curComp.type)
+		redirect(controller: "material",  action: "list")
     }
 
     @Transactional
