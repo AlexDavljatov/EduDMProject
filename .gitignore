@@ -213,3 +213,14 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+EducationalPortal/target/
+EducationalPortal/target-eclipse/
+
+EducationalPortal_v1/target/
+EducationalPortalv2/target/
+EducationalPortalv2/target-eclipse/
+LogFeatures/target/
+LogTest236/target/
+MobileAppCheck/target/
+MongoAndHibernate/target/
