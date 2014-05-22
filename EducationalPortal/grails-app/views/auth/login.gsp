@@ -20,7 +20,7 @@
 
         <div class="col-md-6">
 
-            <g:form action="signIn">
+            <g:form action="signIn" controller="auth">
                 <input type="hidden" name="targetUri" value="${targetUri}"/>
 
                 <div class="form-group ${hasErrors(bean: _DemoPageInstance, field: 'name', 'error')} ">

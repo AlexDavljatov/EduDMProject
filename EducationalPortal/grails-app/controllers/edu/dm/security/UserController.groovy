@@ -163,7 +163,7 @@ class UserController {
         def user = new User(username: params.username,
                 passwordHash: new Sha256Hash(params.password).toHex(),
                 email: params.email, firstName: params.firstName, lastName: params.lastName)
-        user.addToPermissions("*:*")
+        user.addToRoles(Role.findByName("student"))
         user.save flush: true
         log.debug user
         redirect(controller: 'user', action: 'index')
