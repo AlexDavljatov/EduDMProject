@@ -24,11 +24,13 @@ class Material extends Component{
 	static	mapping = {
 	}
 
-	String contentPath
-	String type
+	String contentPath = ""
+	String type = ""
+	String videoId = ""
 	static	constraints = {
 		contentPath nullable: true
 		type nullable: true
+		videoId nullable: true
 	}
 
 	/*

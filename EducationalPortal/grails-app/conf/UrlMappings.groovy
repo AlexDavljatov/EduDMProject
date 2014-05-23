@@ -13,7 +13,7 @@ class UrlMappings {
 		"/terms"		(view:"/siteinfo/terms")
 		"/imprint"		(view:"/siteinfo/imprint")
 		"/nextSteps"	(view:"/home/nextSteps")
-
+		
 		/*
 		 * Pages with controller
 		 * WARN: No domain/controller should be named "api" or "mobile" or "web"!

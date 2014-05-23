@@ -8,78 +8,78 @@ import org.apache.shiro.web.util.WebUtils
 import org.apache.log4j.Logger
 
 class AuthController {
-    private static Logger log = Logger.getLogger(this)
-	
+	private static Logger log = Logger.getLogger(this)
+
 	def shiroSecurityManager
 
-    def index = { redirect(action: "login", params: params) }
+	def index = { redirect(action: "login", params: params) }
 
-    def login = {
-        return [ username: params.username, rememberMe: (params.rememberMe != null), targetUri: params.targetUri ]
-    }
+	def login = {
+		return [ username: params.username, rememberMe: (params.rememberMe != null), targetUri: params.targetUri ]
+	}
 
-    def signIn = {
+	def signIn = {
 		log.debug(params)
-        def authToken = new UsernamePasswordToken(params.username, params.password as String)
+		def authToken = new UsernamePasswordToken(params.username, params.password as String)
 
-        // Support for "remember me"
-        if (params.rememberMe) {
-            authToken.rememberMe = true
-        }
-        
-        // If a controller redirected to this page, redirect back
-        // to it. Otherwise redirect to the root URI.
-        def targetUri = params.targetUri ?: "/"
-        
-        // Handle requests saved by Shiro filters.
-        SavedRequest savedRequest = WebUtils.getSavedRequest(request)
-        if (savedRequest) {
-            targetUri = savedRequest.requestURI - request.contextPath
-            if (savedRequest.queryString) targetUri = targetUri + '?' + savedRequest.queryString
-        }
-        log.debug("targetUri = ${targetUri}")
-        try{
-            // Perform the actual login. An AuthenticationException
-            // will be thrown if the username is unrecognised or the
-            // password is incorrect.
-            SecurityUtils.subject.login(authToken)
+		// Support for "remember me"
+		if (params.rememberMe) {
+			authToken.rememberMe = true
+		}
 
-            log.debug "Redirecting to '${targetUri}'."
-            redirect(uri: targetUri)
-        }
-        catch (AuthenticationException ex){
-            // Authentication failed, so display the appropriate message
-            // on the login page.
-            log.debug "Authentication failure for user '${params.username}'."
-            flash.message = message(code: "login.failed")
+		// If a controller redirected to this page, redirect back
+		// to it. Otherwise redirect to the root URI.
+		def targetUri = params.targetUri ?: "/"
 
-            // Keep the username and "remember me" setting so that the
-            // user doesn't have to enter them again.
-            def m = [ username: params.username ]
-            if (params.rememberMe) {
-                m["rememberMe"] = true
-            }
+		// Handle requests saved by Shiro filters.
+		SavedRequest savedRequest = WebUtils.getSavedRequest(request)
+		if (savedRequest) {
+			targetUri = savedRequest.requestURI - request.contextPath
+			if (savedRequest.queryString) targetUri = targetUri + '?' + savedRequest.queryString
+		}
+		log.debug("targetUri = ${targetUri}")
+		try{
+			// Perform the actual login. An AuthenticationException
+			// will be thrown if the username is unrecognised or the
+			// password is incorrect.
+			SecurityUtils.subject.login(authToken)
 
-            // Remember the target URI too.
-            if (params.targetUri) {
-                m["targetUri"] = params.targetUri
-            }
+			log.debug "Redirecting to '${targetUri}'."
+			redirect(uri: targetUri)
+		}
+		catch (AuthenticationException ex){
+			// Authentication failed, so display the appropriate message
+			// on the login page.
+			log.debug "Authentication failure for user '${params.username}'."
+			flash.message = message(code: "login.failed")
 
-            // Now redirect back to the login page.
-            redirect(action: "login", params: m)
-        }
-    }
+			// Keep the username and "remember me" setting so that the
+			// user doesn't have to enter them again.
+			def m = [ username: params.username ]
+			if (params.rememberMe) {
+				m["rememberMe"] = true
+			}
 
-    def signOut = {
-        // Log the user out of the application.
-        SecurityUtils.subject?.logout()
-        webRequest.getCurrentRequest().session = null
+			// Remember the target URI too.
+			if (params.targetUri) {
+				m["targetUri"] = params.targetUri
+			}
 
-        // For now, redirect back to the home page.
-        redirect(uri: "/")
-    }
+			// Now redirect back to the login page.
+			redirect(action: "login", params: m)
+		}
+	}
 
-    def unauthorized = {
-        render "You do not have permission to access this page."
-    }
+	def signOut = {
+		// Log the user out of the application.
+		SecurityUtils.subject?.logout()
+		webRequest.getCurrentRequest().session = null
+
+		// For now, redirect back to the home page.
+		redirect(uri: "/")
+	}
+
+	def unauthorized = { //        redirect(uri: "/")
+		response.sendError(403)
+	}
 }

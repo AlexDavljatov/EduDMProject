@@ -1,75 +1,13 @@
 
 <%@ page import="edu.dm.course.component.material.Material"%>
 <!DOCTYPE html>
-<html style = "video, input {
-    display: block;
-}
-
-input {
-    width: 100%;       
-}
-
-.info {
-    background-color: aqua;            
-}
-
-.error {
-    background-color: red;
-    color: white;
-}">
+<html>
 
 <head>
 <meta name="layout" content="kickstart" />
 <g:set var="entityName"
 	value="${message(code: 'material.label', default: 'Material')}" />
 <title><g:message code="default.show.label" args="[entityName]" /></title>
-
-<script type="text/javascript">
-	(function localFileVideoPlayerInit(win) {
-		var URL = win.URL || win.webkitURL, displayMessage = (function displayMessageInit() {
-			var node = document.querySelector('#message');
-
-			return function displayMessage(message, isError) {
-				node.innerHTML = message;
-				node.className = isError ? 'error' : 'info';
-			};
-		}()), playSelectedFile = function playSelectedFileInit(event) {
-			var file = this.files[0];
-
-			var type = file.type;
-
-			var videoNode = document.querySelector('video');
-
-			var canPlay = videoNode.canPlayType(type);
-
-			canPlay = (canPlay === '' ? 'no' : canPlay);
-
-			var message = 'Can play type "' + type + '": ' + canPlay;
-
-			var isError = canPlay === 'no';
-
-			displayMessage(message, isError);
-
-			if (isError) {
-				return;
-			}
-
-			var fileURL = URL.createObjectURL(file);
-
-			videoNode.src = fileURL;
-		}, inputNode = document.querySelector('input');
-
-		if (!URL) {
-			displayMessage('Your browser is not '
-					+ '<a href="http://caniuse.com/bloburls">supported</a>!',
-					true);
-
-			return;
-		}
-
-		inputNode.addEventListener('change', playSelectedFile, false);
-	}(window));
-</script>
 
 </head>
 
@@ -110,44 +48,47 @@ input {
 						</g:link></td>
 
 				</tr>
+				<g:if test="${!materialInstance?.contentPath?.isEmpty()}">
+					<tr class="prop">
+						<td valign="top" class="name"><g:message
+								code="material.contentPath.label" default="Content Path" /></td>
 
-				<tr class="prop">
-					<td valign="top" class="name"><g:message
-							code="material.contentPath.label" default="Content Path" /></td>
+						<td valign="top" class="value">
+							${fieldValue(bean: materialInstance, field: "contentPath")}
+						</td>
 
-					<td valign="top" class="value">
-						${fieldValue(bean: materialInstance, field: "contentPath")}
-					</td>
+					</tr>
+				</g:if>
 
-				</tr>
+				<g:if test="${!materialInstance?.videoId?.isEmpty()}">
 
-				<tr class="prop">
-					<div
-						class="${hasErrors(bean: materialInstance, field: 'author', 'error')} ">
-						<label for="author" class="control-label"><g:message
-								code="material.author.label" default="Author" /></label>
-						<div>
-							<g:select class="form-control" id="author" name="author.id"
-								from="${edu.dm.security.User.list()}" optionKey="id"
-								value="${materialInstance?.author?.id}" class="many-to-one"
-								noSelection="['null': '']" />
-							<span class="help-inline">
-								${hasErrors(bean: materialInstance, field: 'author', 'error')}
-							</span>
+					<tr class="prop">
+						<div
+							class="${hasErrors(bean: materialInstance, field: 'author', 'error')} ">
+							<label for="author" class="control-label"><g:message
+									code="material.author.label" default="Author" /></label>
+							<div>
+								<g:select class="form-control" id="author" name="author.id"
+									from="${edu.dm.security.User.list()}" optionKey="id"
+									value="${materialInstance?.author?.id}" class="many-to-one"
+									noSelection="['null': '']" />
+								<span class="help-inline"> ${hasErrors(bean: materialInstance, field: 'author', 'error')}
+								</span>
+							</div>
 						</div>
-					</div>
-				</tr>
-
+					</tr>
+				</g:if>
 				<tr class="prop">
 					<td valign="top" class="name"><g:message
-							code="material.contentPath.label" default="Content Path" /></td>
+							code="material.contentPath.label" default="Content" /></td>
 
-					<td valign="top" class="value">
-						<iframe width="560" height="315" src="//www.youtube.com/embed/e0WKJLovaZg" frameborder="0" allowfullscreen></iframe>		
-					</td>
+					<td valign="top" class="value"><iframe width="560"
+							height="315"
+							src="//www.youtube.com/embed/${materialInstance?.videoId}"
+							frameborder="0" allowfullscreen></iframe></td>
 
 				</tr>
-			
+
 
 
 			</tbody>
@@ -166,11 +107,6 @@ input {
 		</g:uploadForm>
 
 	</section>
-
-<div id="message"></div>
-<input type="file" accept="video/*"/>
-<video controls autoplay src="video/test.mp4" type='video/mp4'></video>
-
 </body>
 
 </html>
