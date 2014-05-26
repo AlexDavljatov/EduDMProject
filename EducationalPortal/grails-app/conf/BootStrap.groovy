@@ -27,7 +27,7 @@ class BootStrap {
 		anonymRole.addToPermissions("uploader:*")
 		anonymRole.addToPermissions("auth:*")
 		anonymRole.addToPermissions("home:*")
-		
+		anonymRole.addToPermissions("user:finalScore,show,recommendedCourses,refresh,submitSolution,enrollCourse,register,edit,notFound")
 
 
 		def adminRole = new Role(name: "admin")

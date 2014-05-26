@@ -36,7 +36,9 @@ class CourseController {
     }
 
     def clusterize(){
-        render userCourseService.findKClusters(Course.findById(Long.valueOf(params.course_id)), 3).clusterResultsToString()
+//    	render userCourseService.findKClusters(Course.findById(Long.valueOf(params.course_id)), 3).clusterResultsToString()
+        [clusters_desc: 
+			userCourseService.findKClusters(Course.findById(Long.valueOf(params.course_id)), 3).clusterResultsToString()]
     }
 
     @Transactional
